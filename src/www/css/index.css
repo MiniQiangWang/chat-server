@@ -1,0 +1,126 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	text-decoration: none;
+	list-style: none;
+}
+.container {
+	width: 500px;
+	margin: auto;
+	height: 640px;
+	background-color: #eee;
+	overflow: hidden;
+	position: relative;
+}
+.layer {
+	position: absolute;
+	z-index: 10;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	background-color: rgba(0,0,0,.8);
+	text-align: center;
+	color: #fff;
+}
+.layer span, .layer .nickname{
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%) translateX(-50%);
+}
+.layer .nickname {
+	display: none;
+}
+.info {
+	color: #fff;
+}
+dot {
+    display: inline-block; 
+    height: 1em; line-height: 1;
+    text-align: left;
+    vertical-align: -.25em;
+    overflow: hidden;
+}
+dot::before {
+    display: block;
+    content: '...\A..\A.';
+    white-space: pre-wrap;   
+    animation: dot 2s infinite step-start both;
+}
+@keyframes dot {
+    33% { transform: translateY(-2em); }
+    66% { transform: translateY(-1em); }
+}
+.banner {
+	width: 100%;
+	height: 80px;
+}
+.title {
+	margin: 25px 10px;
+}
+#online_people {
+	margin: 0px 10px;
+}
+#historyMessage {
+	height: 400px;
+	background-color: #fff;
+	overflow: auto;
+	margin: 5px;
+}
+.time {
+	color: #555;
+}
+.emoji_btn {
+	padding:5px 8px;
+	background-color: #888;
+	color: #ccc;
+	border-radius: 5px;
+	vertical-align: middle;
+}
+.emoji_btn:hover {
+	cursor: pointer;
+	background-color: #555;
+	color: #fff;
+}
+.emoji_wrapper img{
+	height: 30px;
+	width: auto;
+	border: 1px solid #eee;
+}
+#controls {
+	width: 100%;
+	position: relative;
+	margin: 5px auto;
+}
+#controls::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+.items {
+	height: 30px;
+	width: 100%;
+}
+#messageInp {
+	float: left;
+	width: 440px;
+	height: 90px;
+	resize: none;
+}
+#submit {
+	height: 90px;
+	width: 50px;
+	float: right;
+	text-align: center;
+	line-height: 90px;
+}
+.emoji_wrapper {
+	width: 500px;
+	bottom: 130px;
+	position: absolute;
+	width: 500px;
+	border-radius: 10px;
+	background-color: #aaa;
+	box-shadow: 0 0 10px #555;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="/css/index.css">
+</head>
+<body>
+
+	<div class="container">
+		<div class="layer">
+			<span class="connecting">正在连接至服务器<dot>...</dot></span>
+			<div class="nickname">
+				<p>请输入你的昵称:P</p>
+				<input type="text" class="name">
+				<input type="button" value="确认" class="submit">
+				<p class="info"></p>
+			</div>
+		</div>
+		<div class="banner_wrapper">
+			<h1 class="title">Hi~:)</h1>
+			<span id="online_people"></span>
+		</div>	
+		<div id="historyMessage">
+			
+		</div>
+		<div id="controls">
+			<div class="items">
+				<span class="emoji_btn">表情</span>
+			</div>
+			<textarea id="messageInp" cols="30" rows="10" placeholder="请输入内容~"></textarea>
+			<input type="button" value="提交" id="submit">
+			<div class="emoji_wrapper"></div>
+		</div>
+	</div>
+	<script src="/app/app.js"></script>
+	<script src="/socket.io/socket.io.js"></script>
+</body>
+</html>
